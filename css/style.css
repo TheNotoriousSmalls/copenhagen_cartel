@@ -1,0 +1,58 @@
+
+
+:root {
+  --primary-color: rgb(13, 216, 230);
+  --secondary-color: 
+  --accent-color:
+}
+
+/* Mobile Devies */
+@media only screen and (max-width: 576px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(173, 216, 230);
+  }
+
+  .container {
+    display: flex;
+  }
+
+  /* Disable default flex-direction: row */
+  .column {
+    flex-direction: column;
+  }
+
+  .title {
+    align-self: flex-start;
+    color: var(--primary-color);
+  }
+
+  .content {
+    align-self: flex-end;
+  }
+
+  /* .media {
+    align-self: center;
+  } */
+
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+    background-color: blue;
+  }
+
+  /* .figure .wp-block-video {
+  } */
+  
+}
+
+/* Desktops */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
